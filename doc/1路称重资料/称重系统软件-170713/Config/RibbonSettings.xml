@@ -1,0 +1,376 @@
+﻿<XtraSerializer version="1.0" application="DevExpress.XtraBars.Ribbon.RibbonCustomizationModel">
+  <property name="Categories" iskey="true" value="1">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Text">(Unassigned Pages)</property>
+      <property name="IsVisible">true</property>
+      <property name="Pages" iskey="true" value="1">
+        <property name="Item1" isnull="true" iskey="true">
+          <property name="Text">测量</property>
+          <property name="IsVisible">true</property>
+          <property name="Groups" iskey="true" value="5">
+            <property name="Item1" isnull="true" iskey="true">
+              <property name="Text">进出货</property>
+              <property name="ShowCaptionButton">true</property>
+              <property name="IsVisible">true</property>
+              <property name="Items" iskey="true" value="2">
+                <property name="Item1" isnull="true" iskey="true">
+                  <property name="Text">进出货</property>
+                  <property name="IsVisible">true</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">进出货</property>
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">26</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">3</property>
+                  </property>
+                </property>
+                <property name="Item2" isnull="true" iskey="true">
+                  <property name="Text">进出货记录</property>
+                  <property name="IsVisible">true</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">进出货记录</property>
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">27</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">4</property>
+                  </property>
+                </property>
+              </property>
+              <property name="IsCustom">false</property>
+              <property name="Alias">进出货</property>
+              <property name="Name">ribbonPageGroup1</property>
+              <property name="IdInfo" isnull="true" iskey="true">
+                <property name="Id">25</property>
+              </property>
+              <property name="SourceIdInfo" isnull="true" iskey="true">
+                <property name="Id">2</property>
+              </property>
+            </property>
+            <property name="Item2" isnull="true" iskey="true">
+              <property name="Text">报表</property>
+              <property name="ShowCaptionButton">true</property>
+              <property name="IsVisible">true</property>
+              <property name="Items" iskey="true" value="2">
+                <property name="Item1" isnull="true" iskey="true">
+                  <property name="Text">重量曲线</property>
+                  <property name="IsVisible">true</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">重量曲线</property>
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">29</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">6</property>
+                  </property>
+                </property>
+                <property name="Item2" isnull="true" iskey="true">
+                  <property name="Text">重量记录</property>
+                  <property name="IsVisible">true</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">重量记录</property>
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">30</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">7</property>
+                  </property>
+                </property>
+              </property>
+              <property name="IsCustom">false</property>
+              <property name="Alias">报表</property>
+              <property name="Name">ribbonPageGroup2</property>
+              <property name="IdInfo" isnull="true" iskey="true">
+                <property name="Id">28</property>
+              </property>
+              <property name="SourceIdInfo" isnull="true" iskey="true">
+                <property name="Id">5</property>
+              </property>
+            </property>
+            <property name="Item3" isnull="true" iskey="true">
+              <property name="Text">校准</property>
+              <property name="ShowCaptionButton">true</property>
+              <property name="IsVisible">true</property>
+              <property name="Items" iskey="true" value="3">
+                <property name="Item1" isnull="true" iskey="true">
+                  <property name="Text">模块参数</property>
+                  <property name="IsVisible">true</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">模块参数</property>
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">32</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">9</property>
+                  </property>
+                </property>
+                <property name="Item2" isnull="true" iskey="true">
+                  <property name="Text">校准</property>
+                  <property name="IsVisible">true</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">校准</property>
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">33</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">10</property>
+                  </property>
+                </property>
+                <property name="Item3" isnull="true" iskey="true">
+                  <property name="Text">非线性标定</property>
+                  <property name="IsVisible">true</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">非线性标定</property>
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">34</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">11</property>
+                  </property>
+                </property>
+              </property>
+              <property name="IsCustom">false</property>
+              <property name="Alias">校准</property>
+              <property name="Name">ribbonPageGroup8</property>
+              <property name="IdInfo" isnull="true" iskey="true">
+                <property name="Id">31</property>
+              </property>
+              <property name="SourceIdInfo" isnull="true" iskey="true">
+                <property name="Id">8</property>
+              </property>
+            </property>
+            <property name="Item4" isnull="true" iskey="true">
+              <property name="Text">工具</property>
+              <property name="ShowCaptionButton">true</property>
+              <property name="IsVisible">true</property>
+              <property name="Items" iskey="true" value="4">
+                <property name="Item1" isnull="true" iskey="true">
+                  <property name="Text">计算器</property>
+                  <property name="IsVisible">true</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">计算器</property>
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">36</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">13</property>
+                  </property>
+                </property>
+                <property name="Item2" isnull="true" iskey="true">
+                  <property name="Text">数据备份</property>
+                  <property name="IsVisible">true</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">数据备份</property>
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">37</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">14</property>
+                  </property>
+                </property>
+                <property name="Item3" isnull="true" iskey="true">
+                  <property name="Text">数据恢复</property>
+                  <property name="IsVisible">true</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">数据恢复</property>
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">38</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">15</property>
+                  </property>
+                </property>
+                <property name="Item4" isnull="true" iskey="true">
+                  <property name="Text">使用帮助</property>
+                  <property name="IsVisible">true</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">使用帮助</property>
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">39</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">16</property>
+                  </property>
+                </property>
+              </property>
+              <property name="IsCustom">false</property>
+              <property name="Alias">工具</property>
+              <property name="Name">ribbonPageGroup4</property>
+              <property name="IdInfo" isnull="true" iskey="true">
+                <property name="Id">35</property>
+              </property>
+              <property name="SourceIdInfo" isnull="true" iskey="true">
+                <property name="Id">12</property>
+              </property>
+            </property>
+            <property name="Item5" isnull="true" iskey="true">
+              <property name="Text">系统设定</property>
+              <property name="ShowCaptionButton">true</property>
+              <property name="IsVisible">true</property>
+              <property name="Items" iskey="true" value="5">
+                <property name="Item1" isnull="true" iskey="true">
+                  <property name="Text">端口设定</property>
+                  <property name="IsVisible">true</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">端口设定</property>
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">41</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">18</property>
+                  </property>
+                </property>
+                <property name="Item2" isnull="true" iskey="true">
+                  <property name="Text">系统日志</property>
+                  <property name="IsVisible">true</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">系统日志</property>
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">42</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">19</property>
+                  </property>
+                </property>
+                <property name="Item3" isnull="true" iskey="true">
+                  <property name="Text">注册</property>
+                  <property name="IsVisible">true</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">注册</property>
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">43</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">20</property>
+                  </property>
+                </property>
+                <property name="Item4" isnull="true" iskey="true">
+                  <property name="Text">全屏</property>
+                  <property name="IsVisible">true</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">全屏</property>
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">44</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">21</property>
+                  </property>
+                </property>
+                <property name="Item5" isnull="true" iskey="true">
+                  <property name="Text">皮肤选择</property>
+                  <property name="IsVisible">true</property>
+                  <property name="ItemSourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">2147483647</property>
+                  </property>
+                  <property name="IsCustom">false</property>
+                  <property name="Alias">皮肤选择</property>
+                  <property name="Name" />
+                  <property name="IdInfo" isnull="true" iskey="true">
+                    <property name="Id">45</property>
+                  </property>
+                  <property name="SourceIdInfo" isnull="true" iskey="true">
+                    <property name="Id">22</property>
+                  </property>
+                </property>
+              </property>
+              <property name="IsCustom">false</property>
+              <property name="Alias">系统设定</property>
+              <property name="Name">ribbonPageGroup5</property>
+              <property name="IdInfo" isnull="true" iskey="true">
+                <property name="Id">40</property>
+              </property>
+              <property name="SourceIdInfo" isnull="true" iskey="true">
+                <property name="Id">17</property>
+              </property>
+            </property>
+          </property>
+          <property name="IsCustom">false</property>
+          <property name="Alias">测量</property>
+          <property name="Name">ribbonPage1</property>
+          <property name="IdInfo" isnull="true" iskey="true">
+            <property name="Id">24</property>
+          </property>
+          <property name="SourceIdInfo" isnull="true" iskey="true">
+            <property name="Id">1</property>
+          </property>
+        </property>
+      </property>
+      <property name="IsCustom">false</property>
+      <property name="Alias">(Unassigned Pages)</property>
+      <property name="Name" />
+      <property name="IdInfo" isnull="true" iskey="true">
+        <property name="Id">23</property>
+      </property>
+      <property name="SourceIdInfo" isnull="true" iskey="true">
+        <property name="Id">0</property>
+      </property>
+    </property>
+  </property>
+  <property name="CommonSettings" isnull="true" iskey="true">
+    <property name="Minimized">false</property>
+    <property name="ToolbarLocation">Default</property>
+    <property name="IsReady">true</property>
+    <property name="HashCode">23</property>
+  </property>
+</XtraSerializer>

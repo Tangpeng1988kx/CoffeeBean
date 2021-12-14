@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="GBK"?>
+<JYParam>
+  <Serial>
+    <ConnMode>0</ConnMode>
+    <ip>192.168.1.232</ip>
+    <ipport>10000</ipport>
+    <CComm>COM12</CComm>
+    <CBaudRate>38400</CBaudRate>
+    <CDataBits>0</CDataBits>
+    <CParity>0</CParity>
+    <CStopBits>1</CStopBits>
+    <CSerialTimeout>1000</CSerialTimeout>
+    <mbaddr>0</mbaddr>
+    <CSerialInterval>100</CSerialInterval>
+    <AINum>0</AINum>
+    <DIDORefrushTime>1000</DIDORefrushTime>
+    <AIRefrushTime>1000</AIRefrushTime>
+    <ConnStack>1000</ConnStack>
+    <EquipType>0</EquipType>
+  </Serial>
+</JYParam>

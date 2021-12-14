@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="GBK"?>
+<JYParam>
+  <Chart>
+    <通道1别名>a</通道1别名>
+    <通道1选择>True</通道1选择>
+    <通道1显示>True</通道1显示>
+    <通道2别名>b</通道2别名>
+    <通道2选择>True</通道2选择>
+    <通道2显示>True</通道2显示>
+    <通道3别名>c</通道3别名>
+    <通道3选择>True</通道3选择>
+    <通道3显示>True</通道3显示>
+    <通道4别名>d</通道4别名>
+    <通道4选择>True</通道4选择>
+    <通道4显示>True</通道4显示>
+    <通道5别名>
+    </通道5别名>
+    <通道5选择>False</通道5选择>
+    <通道5显示>False</通道5显示>
+    <通道6别名>
+    </通道6别名>
+    <通道6选择>False</通道6选择>
+    <通道6显示>False</通道6显示>
+    <通道7别名>
+    </通道7别名>
+    <通道7选择>False</通道7选择>
+    <通道7显示>False</通道7显示>
+    <通道8别名>
+    </通道8别名>
+    <通道8选择>False</通道8选择>
+    <通道8显示>False</通道8显示>
+    <ChannelNameAll>all</ChannelNameAll>
+    <ShowContent>0</ShowContent>
+    <CalcType>2</CalcType>
+    <CalcCount>1</CalcCount>
+    <ChartViewType>11</ChartViewType>
+    <showdoutnum>2</showdoutnum>
+    <CalcTotal>0</CalcTotal>
+  </Chart>
+</JYParam>
