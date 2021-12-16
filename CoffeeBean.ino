@@ -40,6 +40,15 @@ int gweight = 0;
 float pressureval = 0;
 static QueueHandle_t xqueuel = NULL;
 int target_weight = 0; //要取豆子的重量
+//界面展示参数
+struct displayInfo
+{
+    float tmp;
+    float hum;
+    float pressure;
+    float pressureval;
+};
+struct displayInfo displayMess;
 void setup()
 {
     char str[20] = "hello";
@@ -63,7 +72,8 @@ void setup()
     xMutex = xSemaphoreCreateMutex();
 
     gweight = WeighingSensor::readWeigtValue(); //上电先读取豆仓的重量
-    xqueuel = xQueueCreate(10, sizeof(int));
+    //创建消息队列
+    xqueuel = xQueueCreate(10, sizeof(displayInfo));
     if (xqueuel == 0)
     {
         /* 没有创建成功，用户可以在这里加入创建失败的处理机制 */
@@ -96,7 +106,6 @@ void setup()
         1, /* Priority of the task. */
 
         NULL); /* Task handle. */
-#if 1
     xTaskCreate(
 
         TaskSteering, /* Task function. */
@@ -111,8 +120,6 @@ void setup()
 
         NULL); /* Task handle. */
 
-#endif
-#if 1
     xTaskCreate(
 
         utpTask, /* Task function. */
@@ -126,12 +133,24 @@ void setup()
         1, /* Priority of the task. */
 
         NULL); /* Task handle. */
-#endif
     xTaskCreate(
 
         buttonTask, /* Task function. */
 
         "buttonTask", /* String with name of task. */
+
+        10000, /* Stack size in bytes. */
+
+        NULL, /* Parameter passed as input of the task */
+
+        1,     /* Priority of the task. */
+        NULL); /* Task handle. */
+
+    xTaskCreate(
+
+        displayTask, /* Task function. */
+
+        "displayTask", /* String with name of task. */
 
         10000, /* Stack size in bytes. */
 
@@ -167,6 +186,10 @@ void taskPressureControl(void *parameter)
         {
             motor::MotorStop();
         }
+        displayMess.pressureval = pressureval;
+        if (pdTRUE != xQueueSend(xqueuel, (void *)&displayMess, TickType_t(10)))
+        {
+        }
         delay(1000);
     }
 }
@@ -185,15 +208,16 @@ void taskUNIT_ENV(void *parameter)
         {
             tmp = 0, hum = 0;
         }
+        displayMess.tmp = tmp;
+        displayMess.hum = hum;
+        displayMess.pressure = pressure;
         // M5.lcd.fillRect(0, 20, 100, 60, BLACK); // Fill the screen with black (to clear the screen).  将屏幕填充黑色(用来清屏)
-        xSemaphoreTake(xMutex, portMAX_DELAY);
-        M5.lcd.setCursor(0, 0);
-        M5.Lcd.printf("Temp: %2.1f  \r\nHumi: %2.0f%%  \r\nEnvPressure:%2.0fPa\r\nAirPressureVal:%2.0fKPa\r\n", tmp, hum, pressure, pressureval);
-        xSemaphoreGive(xMutex);
+        if (pdTRUE != xQueueSend(xqueuel, (void *)&displayMess, TickType_t(10)))
+        {
+        }
         delay(2000);
     }
 }
-#if 1
 void TaskSteering(void *parameter)
 {
     uint16_t p_weight = 0; //本次转动前读取重量值
@@ -204,7 +228,6 @@ void TaskSteering(void *parameter)
         {
             if (target_weight > 0)
             {
-
                 Serial.print("target_weight>0 ");
                 Serial.println(target_weight);
                 p_weight = WeighingSensor::readValWeight();
@@ -214,7 +237,7 @@ void TaskSteering(void *parameter)
                 }
                 delay(2500);
                 Serial.println("to-->3993");
-                while (!sm_.WritePosEx(3, 3141, 1000, 100)) //舵机(ID3)以最高速度V=80(50*80步/秒)，加速度A=100(100*100步/秒^2)，运行至P0=0位置
+                while (!sm_.WritePosEx(3, 3993, 1000, 100)) //舵机(ID3)以最高速度V=80(50*80步/秒)，加速度A=100(100*100步/秒^2)，运行至P0=0位置
                 {
                     Serial.print("write pos 3993 OK");
                 }
@@ -230,7 +253,6 @@ void TaskSteering(void *parameter)
         //  sm_.WriteSpe(3.400, 0);
     }
 }
-#endif
 void buttonTask(void *parameter)
 {
     while (1)
@@ -244,7 +266,6 @@ void buttonTask(void *parameter)
         }
         else if (M5.BtnB.pressedFor(1000))
         {
-
             Bflag = !Bflag;
             Serial.println("BBBB");
             delay(3000);
@@ -286,5 +307,20 @@ void utpTask(void *parameter)
             }
         }
         delay(10);
+    }
+}
+
+void displayTask(void *parameter)
+{
+    while (1)
+    {
+        if (pdTRUE != xQueueReceive(xqueuel, (void *)(&displayMess), TickType_t(10)))
+        {
+        }
+        xSemaphoreTake(xMutex, portMAX_DELAY);
+        M5.lcd.setCursor(0, 0);
+        M5.Lcd.printf("Temp: %2.1f  \r\nHumi: %2.0f%%  \r\nEnvPressure:%2.0fPa\r\nAirPressureVal:%2.0fKPa\r\n", displayMess.tmp, displayMess.hum, displayMess.pressure, displayMess.pressureval);
+        xSemaphoreGive(xMutex);
+        delay(1000);
     }
 }
